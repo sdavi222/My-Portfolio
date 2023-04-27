@@ -14,4 +14,10 @@ This website template was created by Seth Davis.
 ## License
 Please refer to the LICENSE in the repo.
 
-Screenshot of website: ![portfolio screenshot](https://user-images.githubusercontent.com/130076128/235013292-a5bd1f91-ed6f-4f74-ad2f-32b612d55ee6.png)
+
+
+Screenshot of website:
+![portfolio screenshot](https://user-images.githubusercontent.com/130076128/235013292-a5bd1f91-ed6f-4f74-ad2f-32b612d55ee6.png)
+
+Link to live website:
+https://sdavi222.github.io/my-portfolio/
