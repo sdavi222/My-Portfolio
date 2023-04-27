@@ -1,0 +1,138 @@
+
+:root {
+    --main-bg-color: #f2f2f2;
+    --main-font-color: #333;
+    --nav-bg-color: #ccc;
+    --nav-link-color: #333;
+    --nav-link-hover-color: #fff;
+    --section-bg-color: #fff;
+    --footer-bg-color: #333;
+    --footer-font-color: #fff;
+    --main-padding: 20px;
+    --nav-padding: 10px;
+    --nav-link-margin: 0 10px;
+    --section-margin: 20px;
+    --project-padding: 20px;
+    --project-margin: 20px;
+    --project-image-width: 50%;
+    --project-image-height: auto;
+}
+
+.project-image {
+    width: var(--project-image-width);
+    height: var(--project-image-height);
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: left;
+}
+.project-image {
+    width: var(--project-image-width);
+    height: var(--project-image-height);
+    margin-top: var(--project-padding);
+}
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: var(--main-bg-color);
+        margin: 0;
+    }
+    
+    header {
+        background-color: var(--main-font-color);
+        color: #fff;
+        padding: var(--main-padding);
+    }
+    
+    h1 {
+        margin: 0;
+    }
+    
+    nav {
+        background-color: var(--nav-bg-color);
+        padding: var(--nav-padding);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav li {
+        margin: var(--nav-link-margin);
+    }
+    
+    nav a {
+        color: var(--nav-link-color);
+        text-decoration: none;
+    }
+    
+    nav a:hover {
+        color: var(--nav-link-hover-color);
+    }
+    
+    section {
+        padding: var(--main-padding);
+        margin: var(--section-margin);
+        background-color: var(--section-bg-color);
+    }
+    
+    section h2 {
+        margin-top: 0;
+    }
+    
+    .project {
+        display: flex;
+        flex-direction: column;
+        padding: var(--project-padding);
+        margin: var(--project-margin);
+        background-color: var(--section-bg-color);
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    }
+    
+    .project-details {
+        flex: 1;
+    }
+    
+    .project-details h3 {
+        margin-top: 0;
+    }
+    
+    .project-image {
+        width: var(--project-image-width);
+        height: var(--project-image-height);
+        margin-top: var(--project-padding);
+    }
+    
+    footer {
+        background-color: var(--footer-bg-color);
+        color: var(--footer-font-color);
+        padding: var(--main-padding);
+        text-align: center;
+    }
+        header {
+            padding: var(--main-padding) 10px;
+        }
+
+        nav {
+            flex-direction: column;
+        }
+        
+        nav ul {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        nav li {
+            margin: var(--nav-link-margin) 5px;
+        }
+    
+    
