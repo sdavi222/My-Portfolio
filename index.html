@@ -1,61 +1,98 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" href="style.css">
-	<title>My Portfolio</title>
-</head>
-<body>
-	<header>
-		<h1>Seth Davis' Portfolio</h1>
-	</header>
-	<nav>
-		<ul>
-			<li><a href="#about">About</a></li>
-			<li><a href="#portfolio">Projects</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-	</nav>
-	<section id="about">
-		<h2>About Me</h2>
-		<p> Hello! My name is Seth Davis, and I am a skilled and passionate web developer from Charlotte, NC.
-            I've actively embarked on this journey of coding and I am enjoying every bit of it.<br>
-             Engaging in diverse techniques and consistently honing my programming skills has been a fulfilling and rewarding experience.
-             </p>
-	</section>
-      <section id="projects">
-        <h2>My Projects</h2>
-        <p>Welcome to my portfolio! Below are some of the projects I've worked on.</p>
-        <div class="project">
-          <div class="project-details">
-            <a href="https://sdavi222.github.io/movie-recommender"><h3>Movie Recommender App</h3></a>
-            <p>This is a web application that allows users to generate random movie recommendations based on different genres..</p>
-            <img src="Assets/mov-rec-pic.png" alt="Movie recommender" class="project-image">
-          </div>
-        </div>
-        <div class="project">
-          <div class="project-details">
-            <a href="https://kcgswagg.github.io/sports-tracker/index.html"><h3>Sports Tracker App</h3></a>
-            <p>This website will allow you to track past and upcoming games for the top baseball and soccer teams.</p>
-            <img src="Assets/sports-tracker-pic.png" alt="Sports Tracker App" class="project-image">
-          </div>
-        </div> 
 
-        <div class="project">
-          <div class="project-details">
-            <a href="https://sdavi222.github.io/weather-dashboard/"><h3>Weather Dashboard App</h3></a>
-            <p>Description of your Weather Dashboard App.</p>
-            <img src="Assets/weather-dashboard-pic.png" alt="Weather Dashboard App" class="project-image">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>My Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="bg-dark text-white text-center py-3">
+    <h1>Seth Davis' Portfolio</h1>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+
+  <section id="about" class="container my-4">
+    <h2>About Me</h2>
+    <p>Hello! My name is Seth Davis, a passionate web developer from Charlotte, NC. Having recently completed an intensive coding bootcamp, my dedication to technology has evolved into a passionate pursuit. I've actively embarked on this journey to advance my career in coding. Engaging in diverse techniques and consistently honing my programming skills has been a fulfilling and rewarding experience throughout this process.</p>
+  </section>
+
+  <section id="projects" class="container my-4">
+    <h2>My Projects</h2>
+
+    <!-- Project Cards -->
+    <div class="row">
+      <!-- Movie Recommender -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="Assets/mov-rec-pic.png" class="card-img-top" alt="Movie Recommender">
+          <div class="card-body">
+            <a href="https://sdavi222.github.io/movie-recommender"><h5 class="card-title">Movie Recommender App</h5></a>
+            <p class="card-text">This is a web application that allows users to generate random movie recommendations based on different genres.</p>
           </div>
         </div>
-	<section id="contact">
-		<h2>Contact Me</h2>
-		<p>704-608-3393</p>
-        <p>sethdavi224@gmail.com</p>
-        <a href="https://github.com/sdavi222">Github</a><br>
-        <a href="https://www.linkedin.com/in/seth-davis-3b2581242/">LinkedIn</a>
-	</section>
-	<footer>
-		<p></p>
-	</footer>
+      </div>
+
+      <!-- Sports Tracker -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="Assets/sports-tracker-pic.png" class="card-img-top" alt="Sports Tracker App">
+          <div class="card-body">
+            <a href="https://kcgswagg.github.io/sports-tracker/index.html"><h5 class="card-title">Sports Tracker App</h5></a>
+            <p class="card-text">This website will allow you to track past and upcoming games for the top baseball and soccer teams.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weather Dashboard -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="Assets/weather-dashboard-pic.png" class="card-img-top" alt="Weather Dashboard App">
+          <div class="card-body">
+            <a href="https://sdavi222.github.io/weather-dashboard/"><h5 class="card-title">Weather Dashboard App</h5></a>
+            <p class="card-text">Description of your Weather Dashboard App.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container my-4">
+    <h2>Contact Me</h2>
+    <p>704-608-3393</p>
+    <p>sethdavi224@gmail.com</p>
+    <a href="https://github.com/sdavi222">Github</a><br>
+    <a href="https://www.linkedin.com/in/seth-davis-3b2581242/">LinkedIn</a>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p></p>
+  </footer>
 </body>
+
 </html>
+
